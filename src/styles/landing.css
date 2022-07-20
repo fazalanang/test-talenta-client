@@ -1,0 +1,121 @@
+* {
+    background-color: #FEE2C5;
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+}
+
+nav .leftNav {
+    flex: 40%;
+}
+
+nav .leftNav img {
+    width: 90px;
+    height: 90px;
+    margin: 5px 0px 0px 80px;
+    position: relative;
+}
+
+nav .rightNav {
+    flex: 60%;
+    display: inline!important;
+    direction: rtl;
+}
+
+nav .rightNav h3 {
+    display: inline !important;
+    margin: 30px 20px 0px 0px;
+    color: #1E628F;
+}
+
+nav .rightNav button {
+    display: inline;
+    padding: 10px 25px;
+    margin: 25px 60px 0px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #01aef3;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    height: 90vh;
+}
+
+.container .leftContainer {
+    flex: 20%;
+}
+
+.leftContainer .profile {
+    margin: 90px 0px 0px 90px;
+}
+
+.leftContainer img {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+}
+
+.leftContainer h5 {
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+.leftContainer .addForm {
+    display: flex;
+    margin: 50px 0px 0px 30px;
+}
+
+.leftContainer .icon img {
+    width: 22px;
+    height: 22px
+}
+
+.leftContainer h6 {
+    margin: 2px 0px 0px 10px;
+    font-size: small;
+    cursor: pointer;
+}
+
+.container .rightContainer {
+    flex: 80%;
+    background-color: #fff;
+    margin: 30px 25px 0px 0px;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    overflow-y: auto;
+}
+
+.table {
+    background-color: #fff !important;
+    margin: 10px 50px 0px 50px;
+}
+
+.table thead tr {
+    border-radius: 20px;
+}
+
+.table thead tr th {
+    padding: 7px 9px;
+    width: 300px;
+    background-color: #C6DCE4 !important;
+    color: #243A73;
+}
+
+.table tbody tr td {
+    padding: 7px 9px;
+    text-align: center;
+    background-color: #DAEAF1 !important;
+    color: #243A73;
+}
+
+h4 {
+    background-color: #fff;
+    font-size: x-large;
+    margin: 50px 0px 20px 80px;
+    color: #06283D;
+}
