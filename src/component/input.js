@@ -2,10 +2,8 @@ import '../styles/input.css'
 import React, { useEffect, useState } from 'react';
 import background from '../assets/background.jpg';
 import { API } from "../config/api";
-import { useNavigate } from "react-router";
 
 export default function Input({ open,onClose }) {
-   let navigate = useNavigate(); 
   let api = API();
 
   const [form, setForm] = useState ({
@@ -25,29 +23,24 @@ export default function Input({ open,onClose }) {
     try {
       e.preventDefault();
 
-      const body = JSON.stringify(form);
 
       const config = {
-        method: "POST",
         headers: {
           "Content-type": "application/json",
         },
-        body,
       };
       console.log(config);
 
       const formData = new FormData()
       formData.set("name", form.name)
-      formData.set("gender", form.desc)
-      formData.set("age", form.price)
+      formData.set("gender", form.gender)
+      formData.set("age", form.age)
 
-      const response = await api.post( '/user' , body, config);
-      console.log(response.data);
-      navigate.push("/")
+      const body = JSON.stringify( formData );
+      const response = await api.post( "/user", config, body);
+      console.log(response);
     } catch (error) {
-    
       console.log(error);
-
     }
   };
 
